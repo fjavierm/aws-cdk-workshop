@@ -1,4 +1,4 @@
-package com.myorg;
+package dev.binarycoders.awscdkworkshop;
 
 import software.amazon.awscdk.core.App;
 

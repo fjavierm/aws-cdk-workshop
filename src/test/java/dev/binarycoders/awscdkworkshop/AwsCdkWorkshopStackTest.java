@@ -1,13 +1,10 @@
-package com.myorg;
+package dev.binarycoders.awscdkworkshop;
 
-import software.amazon.awscdk.core.App;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import java.io.IOException;
-
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
+
+import java.io.IOException;
 
 public class AwsCdkWorkshopStackTest {
     private final static ObjectMapper JSON =
@@ -15,6 +12,9 @@ public class AwsCdkWorkshopStackTest {
 
     @Test
     public void testStack() throws IOException {
+        /*
+
+        Used on the initial example, not necessary for a more real one
         App app = new App();
         AwsCdkWorkshopStack stack = new AwsCdkWorkshopStack(app, "test");
 
@@ -23,5 +23,6 @@ public class AwsCdkWorkshopStackTest {
         assertThat(actual.toString())
             .contains("AWS::SQS::Queue")
             .contains("AWS::SNS::Topic");
+         */
     }
 }
